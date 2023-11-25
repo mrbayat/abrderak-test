@@ -1,7 +1,7 @@
 architecture: microservices
 database: mongodb
 message broker: Rabbitmq
-project start : `docker compose up -d`
+project start : docker compose up -d
 reverse proxy: Nignx
 containers : Docker
 
