@@ -1,0 +1,82 @@
+version: '3'
+services:
+
+####################### nginx ##########################
+  nginx:
+    build:
+      context: ./nginx
+    restart: always
+    container_name: nginx_parking
+    ports:
+      - '6500:6500'
+    links:
+      - app_parking:app_parking
+      - app_parking_reservation:app_parking_reservation
+      - app_pricing:app_pricing
+
+####################### app ##########################
+  app_parking:
+    build:
+      context: parking/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - mongodb  
+      - rabbitmq
+    links:
+      - mongodb:mongodb
+      - rabbitmq:rabbitmq    
+    container_name: parking
+
+  app_parking_reservation:
+    build:
+      context: parking_reservation/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - mongodb  
+      - rabbitmq
+    links:
+      - mongodb:mongodb
+      - rabbitmq:rabbitmq
+    container_name: parking_reservation
+
+  app_pricing:
+    build:
+      context: pricing/
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - mongodb  
+      - rabbitmq
+    links:
+      - mongodb:mongodb
+      - rabbitmq:rabbitmq    
+    container_name: pricing
+
+####################### RabbitMQ ##########################      
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: 'rabbitmq-parking'
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbitmq
+      RABBITMQ_DEFAULT_PASS: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - /var/lib/rabbitmq:/var/lib/rabbitmq
+
+####################### mongodb ##########################
+  mongodb:
+    image: mongo:4.2
+    container_name: 'mongodb-parking'
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb:/data/db
+
+volumes:
+  mongodb:

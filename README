@@ -1,0 +1,10 @@
+architecture: microservices
+database: mongodb
+message broker: Rabbitmq
+project start : docker compose up -d
+reverse proxy: Nignx
+containers : Docker
+
+microservices parking : مدیریت پارکینگ ها
+microservices parking_reservation: مدیریت درخواست های پارکینگ
+microservices pricing: مدیریت قیمت گذاری

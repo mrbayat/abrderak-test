@@ -1,0 +1,11 @@
+{
+  "db": {
+    "name": "parking",
+    "mongodbConfig": {
+      "perUrl": "mongodb://",
+      "options": {}
+    }
+  },
+  "baseUrl": "/api/parking/",
+  "supportDatabase": "mongodb"
+}

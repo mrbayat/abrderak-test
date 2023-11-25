@@ -1,0 +1,19 @@
+{
+  "db": {
+    "name": "parking_pricing",
+    "mongodbConfig": {
+      "perUrl": "mongodb://",
+      "options": {}
+    }
+  },
+  "rabbitmQ": {
+    "perUrl": "amqp://",
+    "setTimeExit": 500,
+    "setTimeReconnect": 1000
+  },
+  "baseUrl": "/api/pricing/",
+  "supportDatabase": "mongodb",
+  "eventName": {
+    "calculateReservationPrice": "calculate_reservation_price"
+  }
+}

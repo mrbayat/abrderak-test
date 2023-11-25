@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "964d7f37-8c69-49d2-a857-874d9d496e19",
+		"name": "abrdrak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1565227",
+		"_collection_link": "https://nodino-api-ver1.postman.co/workspace/pido~d07cbe05-a637-4cc5-b4a7-37d115c55d2c/collection/1565227-964d7f37-8c69-49d2-a857-874d9d496e19?action=share&source=collection_link&creator=1565227"
+	},
+	"item": [
+		{
+			"name": "parking",
+			"item": [
+				{
+					"name": "parking_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parkingName\": \"پارکینگ ابردراک\",\n    \"parkingAddress\": \"شیراز-شیراز\",\n    \"cityId\": 1,\n    \"cityName\": \"شیراز\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6500/api/parking/v1/parking_create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6500",
+							"path": [
+								"api",
+								"parking",
+								"v1",
+								"parking_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "parking_remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6500/api/parking/v1/parking_remove/6561a9547791d384793f3b3c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6500",
+							"path": [
+								"api",
+								"parking",
+								"v1",
+								"parking_remove",
+								"6561a9547791d384793f3b3c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reservation",
+			"item": [
+				{
+					"name": "new_reservation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parkingName\" : \"پارکینگ ابردراک\" ,\n    \"parkingId\" : \"6561a975600254c5cb3a70ee\",\n    \"vehicleType\" : \"heavyCar\",\n    \"numberplate\" : {\n        \"firstPart\" : 22,\n        \"charPart\" : \"پ\",\n        \"secondPart\" : 232,\n        \"endPart\" : 22\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6500/api/reservation/v1/new_reservation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6500",
+							"path": [
+								"api",
+								"reservation",
+								"v1",
+								"new_reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calculate_reservation_price",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reservationId\": \"6561a97e2f978c17f3ba91ca\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6500/api/reservation/v1/calculate_reservation_price",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6500",
+							"path": [
+								"api",
+								"reservation",
+								"v1",
+								"calculate_reservation_price"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pricing",
+			"item": [
+				{
+					"name": "new_pricing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"parkingName\" : \"پارکینگ ابردراک\" ,\n    \"parkingId\" : \"6561a975600254c5cb3a70ee\",\n    \"costRules\": {\n        \"heavyCar\": {\n            \"oneHour\": 10000,\n            \"towToFourHour\": 8000,\n            \"fourToEndTime\": 7000,\n            \"perDay\": 65000\n        },\n        \"car\": {\n            \"oneHour\": 5000,\n            \"towToFourHour\": 3500,\n            \"fourToEndTime\": 3000,\n            \"perDay\": 35000\n        },\n        \"motor\": {\n            \"oneHour\": 1000,\n            \"towToFourHour\": 800,\n            \"fourToEndTime\": 600,\n            \"perDay\": 20000\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6500/api/pricing/v1/new_pricing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6500",
+							"path": [
+								"api",
+								"pricing",
+								"v1",
+								"new_pricing"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

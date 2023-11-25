@@ -1,0 +1,7 @@
+node_modules 
+mongodata
+.vscode
+information/information
+auth/auth
+.DS_Store
+upload_file
