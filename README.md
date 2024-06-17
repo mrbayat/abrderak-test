@@ -125,50 +125,6 @@ Npm scripts basically allow us to call (and chain) terminal commands via npm.
 | `test`                    | Runs build and run tests using mocha        |
 | `lint`                    | Runs TSLint on project files       |
 
-### Using the debugger in VS Code
-Node.js debugging in VS Code is easy to setup and even easier to use. 
-Press `F5` in VS Code, it looks for a top level `.vscode` folder with a `launch.json` file.
-
-```json
-{
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "type": "node",
-                "request": "launch",
-                "name": "Launch Program",
-                "program": "${workspaceFolder}/dist/index.js",
-                "preLaunchTask": "tsc: build - tsconfig.json",
-               
-                "outFiles": [
-                    "${workspaceFolder}/dist/*js"
-                ]
-            },
-           
-            {
-                // Name of configuration; appears in the launch configuration drop down menu.
-                "name": "Run mocha",
-                "request":"launch",
-                // Type of configuration. Possible values: "node", "mono".
-                "type": "node",
-                // Workspace relative or absolute path to the program.
-                "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-                
-                // Automatically stop program after launch.
-                "stopOnEntry": false,
-                // Command line arguments passed to the program.
-                "args": ["--no-timeouts", "--compilers", "ts:ts-node/register", "${workspaceRoot}/test/*"],
-                
-                // Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
-               
-                // Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
-                "runtimeExecutable": null,
-                // Environment variables passed to the program.
-                "env": { "NODE_ENV": "test"}
-            }
-        ]
-    }
-```
 
 ## Testing
 The tests(backend) are  written in Mocha and the assertions done using Chai
