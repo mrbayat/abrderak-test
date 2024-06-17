@@ -3,13 +3,17 @@
 # Environment vars
 This project uses the following environment variables:
 
-| Name                          | Description                         | Default Value                                  |
+| Name                          | Description                         | Example Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
-|VITE_BASE_URL_API           | Cors accepted values            | "*"      |
-|VITE_API_KEY                | Cors accepted values            | "*"      |
-|CORS                        | Cors accepted values            | "*"      |
-|CORS                        | Cors accepted values            | "*"      |
-
+|VITE_BASE_URL_API           |   base api url (front end)       | "*"      |
+|VITE_API_KEY                | x-api-key     (front end)        | "*"      |
+|HTTP_PORT                   | backend port  (backend)                 | "*"      |
+|MONGO_HOST                  | mongodb host   (backend)                    | "*"      |
+|MONGO_USERNAME              | mongodb username  (backend)                 | "*"      |
+|MONGO_PASSWORD              | mongodb password  (backend)                  | "*"      |
+|MONGO_PORT                  | mongodb port     (backend)                  | "*"      |
+|MONGO_AUTHSOURCE            | mongodb auth source database   (backend)     | "*"      |
+|X_API_KEY                   | x-api-key       (backend)                   | "*"      |
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version 8.0.0
