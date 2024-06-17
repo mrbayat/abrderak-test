@@ -347,21 +347,6 @@ The fields `x-swagger-router-controller` will point the middleware to a `helloWo
   The final piece of middleware enables serving of the swagger-ui interface direct from the Express server. It also serves the raw Swagger schema (.json) that clients can consume. Paths for both are configurable.
   The swagger-ui endpoint is acessible at /docs endpoint.
 
-# TSLint
-TSLint is a code linter that helps catch minor code quality and style issues.
-
-## TSLint rules
-All rules are configured through `tslint.json`.
-
-
-## Running TSLint
-To run TSLint you can call the main build script or just the TSLint task.
-```
-npm run build:live   // runs full build including TSLint
-npm run lint  // runs only TSLint
-```
-
-
 # Common Issues
 
 ## npm install fails
