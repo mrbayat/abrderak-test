@@ -26,6 +26,7 @@ This project uses the following environment variables:
 git clone https://github.com/mrbayat/learn-hub.git
 ```
 - Build and run the project By docker compose
+  
   first update the file .env
 ```
 cd <project_name>
