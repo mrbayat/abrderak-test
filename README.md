@@ -68,6 +68,23 @@ The folder structure of this backend is explained below:
 | **src/interfaces**           | routes and controller      layers                 
 | **test**         | all project test                                                              |
 
+The folder structure of this backend is explained below:
+
+| Name | Description |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| **public**                 | |
+| **docker**         | dockerize project                                                           |
+| **src**                  | Contains  source code that will be compiled to the dist dir                               |
+| **src/components**      | all components in project
+| **src/constants**              | all constants in project 
+| **src/containers**           | layout project                 
+| **src/helpers**         | helpers in project                                                              |
+| **src/hooks**         | all hooks in project                                                             |
+| **src/languages**         | all project test                                                              |
+| **src/pages**         | all pages exists in dir                                                            |
+| **src/routes**         | create all routes                                                               |
+| **src/services**         | call api                                                              |
+| **src/store**         | state manager                                                              |
 ## Building the project
 ### Configuring TypeScript compilation
 ```json
