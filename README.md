@@ -19,7 +19,7 @@ This project uses the following environment variables:
 - Install [Node.js](https://nodejs.org/en/) version 18.17.0
 - Install [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/) version 4.2.0
 - Install [Docker](https://docs.docker.com/engine/install/) version latest
-- 
+
 # Getting started
 - Clone the repository
 ```
@@ -56,23 +56,17 @@ npm install -D typescript
 ```
 
 ## Project Structure
-The folder structure of this app is explained below:
+The folder structure of this backend is explained below:
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **dist**                 | Contains the distributable (or output) from your TypeScript build.  |
-| **node_modules**         | Contains all  npm dependencies                                                            |
-| **src**                  | Contains  source code that will be compiled to the dist dir                               |
-| **configuration**        | Application configuration including environment-specific configs 
-| **src/controllers**      | Controllers define functions to serve various express routes. 
-| **src/lib**              | Common libraries to be used across your app.  
-| **src/middlewares**      | Express middlewares which process the incoming requests before handling them down to the routes
-| **src/routes**           | Contain all express routes, separated by module/area of application                       
-| **src/models**           | Models define schemas that will be used in storing and retrieving data from Application database  |
-| **src/monitoring**      | Prometheus metrics |
-| **src**/index.ts         | Entry point to express app                                                               |
-| package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)   | tsconfig.json            | Config settings for compiling source code only written in TypeScript    
-| tslint.json              | Config settings for TSLint code style checking                                                |
+| **config**                 | Node-config organizes hierarchical configurations for your app deployments.|
+| **docker**         | dockerize project                                                           |
+| **src**                  | Contains  source code that will be compiled to the app dir                               |
+| **src/application_service**      | business layer
+| **src/infrastructure**              | technology layers 
+| **src/interfaces**           | routes and controller      layers                 
+| **test**         | all project test                                                              |
 
 ## Building the project
 ### Configuring TypeScript compilation
