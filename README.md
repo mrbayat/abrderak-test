@@ -23,12 +23,13 @@ This project uses the following environment variables:
 # Getting started
 - Clone the repository
 ```
-git clone  <git lab template url> <project_name>
+git clone https://github.com/mrbayat/learn-hub.git
 ```
-- Install dependencies
+- Build and run the project By docker compose
+  first update the file .env
 ```
 cd <project_name>
-npm install
+docker compose up -d
 ```
 - Build and run the project
 ```
