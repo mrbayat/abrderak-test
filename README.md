@@ -81,33 +81,6 @@ created by Javascript Reactjs Vitejs
 | **src/services**         | call api                                                              |
 | **src/store**         | state manager                                                              |
 
-
-## Building the project
-### Configuring TypeScript compilation
-```json
-{
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "outDir": "dist",
-      "sourceMap": true
-    },
-    
-    "include": [
-      "src/**/*.ts"
-      
-
-    ],
-    "exclude": [
-      "src/**/*.spec.ts",
-      "test",
-      "node_modules"
-    
-    ]
-  }
-
-```
-
 ### Running the build
 All the different build steps are orchestrated via [npm scripts](https://docs.npmjs.com/misc/scripts).
 Npm scripts basically allow us to call (and chain) terminal commands via npm.
