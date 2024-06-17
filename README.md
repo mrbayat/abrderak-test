@@ -171,12 +171,12 @@ Press `F5` in VS Code, it looks for a top level `.vscode` folder with a `launch.
 ```
 
 ## Testing
-The tests are  written in Mocha and the assertions done using Chai
+The tests(backend) are  written in Mocha and the assertions done using Chai
 
 ```
-"mocha": "3.4.2",
-"chai": "4.1.2",
-"chai-http": "3.0.0",
+"chai": "^4.1.2",
+"chai-http": "^4.0.0",
+"mocha": "^5.2.0"
 
 ```
 
@@ -207,7 +207,8 @@ describe('App', () => {
 ```
 ### Running tests using NPM Scripts
 ````
-npm run test
+cd backend
+npm test
 
 ````
 Test files are created under test folder.
