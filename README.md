@@ -27,22 +27,23 @@ git clone https://github.com/mrbayat/learn-hub.git
 ```
 - Build and run the project By docker compose
   
-  first update the file .env
+  first update file .env
 ```
 cd <project_name>
 docker compose up -d
 ```
-- Build and run the project
+- Build and run the project in development mode
 ```
+#first create .env file in root backend folder and set environment
+cd backend 
+npm install
 npm start
 ```
-  Navigate to `http://localhost:8001`
-
 - API Document endpoints
 
-  swagger Spec Endpoint : http://localhost:8001/api-docs 
+  api Endpoint : http://myip:5040/api/ 
 
-  swagger-ui  Endpoint : http://localhost:8001/docs 
+  swagger-ui  Endpoint : http://myip:5040/api-docs 
 
 
 # TypeScript + Node 
@@ -92,6 +93,8 @@ created by Javascript Reactjs Vitejs
 | **src/routes**         | create all routes                                                               |
 | **src/services**         | call api                                                              |
 | **src/store**         | state manager                                                              |
+
+
 ## Building the project
 ### Configuring TypeScript compilation
 ```json
