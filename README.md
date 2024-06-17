@@ -60,6 +60,9 @@ npm install -D typescript
 ## Project Structure
 The folder structure of this backend is explained below:
 
+created by Javascript Nodejs Expressjs
+
+
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
 | **config**                 | Node-config organizes hierarchical configurations for your app deployments.|
@@ -71,6 +74,8 @@ The folder structure of this backend is explained below:
 | **test**         | all project test                                                              |
 
 The folder structure of this frontend is explained below:
+
+created by Javascript Reactjs Vitejs
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
