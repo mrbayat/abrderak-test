@@ -5,10 +5,10 @@ This project uses the following environment variables:
 
 | Name                          | Description                         | Default Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
-|CORS           | Cors accepted values            | "*"      |
-|CORS           | Cors accepted values            | "*"      |
-|CORS           | Cors accepted values            | "*"      |
-|CORS           | Cors accepted values            | "*"      |
+|VITE_BASE_URL_API           | Cors accepted values            | "*"      |
+|VITE_API_KEY                | Cors accepted values            | "*"      |
+|CORS                        | Cors accepted values            | "*"      |
+|CORS                        | Cors accepted values            | "*"      |
 
 
 # Pre-requisites
