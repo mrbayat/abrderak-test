@@ -1,10 +1,13 @@
-# Nodejs FES Template
+# LearnHub Project
 
 # Environment vars
 This project uses the following environment variables:
 
 | Name                          | Description                         | Default Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
+|CORS           | Cors accepted values            | "*"      |
+|CORS           | Cors accepted values            | "*"      |
+|CORS           | Cors accepted values            | "*"      |
 |CORS           | Cors accepted values            | "*"      |
 
 
