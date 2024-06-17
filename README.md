@@ -16,9 +16,10 @@ This project uses the following environment variables:
 |X_API_KEY                   | x-api-key       (backend)                   | "my x-api-key"      |
 
 # Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) version 8.0.0
-
-
+- Install [Node.js](https://nodejs.org/en/) version 18.17.0
+- Install [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/) version 4.2.0
+- Install [Docker](https://docs.docker.com/engine/install/) version latest
+- 
 # Getting started
 - Clone the repository
 ```
