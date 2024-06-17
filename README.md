@@ -68,7 +68,7 @@ The folder structure of this backend is explained below:
 | **src/interfaces**           | routes and controller      layers                 
 | **test**         | all project test                                                              |
 
-The folder structure of this backend is explained below:
+The folder structure of this frontend is explained below:
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
@@ -80,7 +80,7 @@ The folder structure of this backend is explained below:
 | **src/containers**           | layout project                 
 | **src/helpers**         | helpers in project                                                              |
 | **src/hooks**         | all hooks in project                                                             |
-| **src/languages**         | all project test                                                              |
+| **src/languages**         | multilanguages text                                                             |
 | **src/pages**         | all pages exists in dir                                                            |
 | **src/routes**         | create all routes                                                               |
 | **src/services**         | call api                                                              |
