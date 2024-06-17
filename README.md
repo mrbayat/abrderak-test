@@ -5,15 +5,15 @@ This project uses the following environment variables:
 
 | Name                          | Description                         | Example Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
-|VITE_BASE_URL_API           |   base api url (front end)       | "*"      |
-|VITE_API_KEY                | x-api-key     (front end)        | "*"      |
-|HTTP_PORT                   | backend port  (backend)                 | "*"      |
-|MONGO_HOST                  | mongodb host   (backend)                    | "*"      |
-|MONGO_USERNAME              | mongodb username  (backend)                 | "*"      |
-|MONGO_PASSWORD              | mongodb password  (backend)                  | "*"      |
-|MONGO_PORT                  | mongodb port     (backend)                  | "*"      |
-|MONGO_AUTHSOURCE            | mongodb auth source database   (backend)     | "*"      |
-|X_API_KEY                   | x-api-key       (backend)                   | "*"      |
+|VITE_BASE_URL_API           |   base api url (front end)       | "http://myip/api/tasks"      |
+|VITE_API_KEY                | x-api-key     (front end)        | "my x-api-key"      |
+|HTTP_PORT                   | backend port  (backend)                 | "5040"      |
+|MONGO_HOST                  | mongodb host   (backend)                    | "mongodb://mongodb_container"      |
+|MONGO_USERNAME              | mongodb username  (backend)                 | "myusermongo"      |
+|MONGO_PASSWORD              | mongodb password  (backend)                  | "mypasswordmongo"      |
+|MONGO_PORT                  | mongodb port     (backend)                  | "myportmongo"      |
+|MONGO_AUTHSOURCE            | mongodb auth source database   (backend)     | "dbname"      |
+|X_API_KEY                   | x-api-key       (backend)                   | "my x-api-key"      |
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version 8.0.0
